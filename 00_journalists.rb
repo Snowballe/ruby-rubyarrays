@@ -64,7 +64,7 @@ puts "6 - Affiche le nombre d'underscores_ dans tous les pseudos"
 puts "7 - Trie la liste par ordre alphabétique"
 puts "8 - Trie les 50 handles les plus courts de la liste"
 puts "9 - Donne la position de @epenser dans la liste"
-puts "(exit pour arrêter le programme)"
+puts "(0 pour arrêter le programme)"
 puts "##################################################################"
 
 while (1)
@@ -91,15 +91,13 @@ elsif usr == 8
    short(journalists)
 elsif usr == 9
    posEpenser(journalists)
-elsif usr == "exit"
+elsif usr == 0
    exit
-elsif usr = to_s
-   puts "On a dit un chiffre, on est pas dans un jeu télévisé mdr"
+
 elsif usr > 9
    puts "Un chiffre plus petit, t'as vu la liste nan ?"
-elsif usr < 1
+elsif usr < 0
    puts "Aller, soit pas timide, augmente un peu ton chiffre ;)"
 end
 
 end
-exit
